@@ -17,23 +17,32 @@ Frontend.md looks at your frontend source code and generates a markdown file (ca
 - Automated - Parses comments in a file, pulls out the first one and adds it as a description
 - Readable - results are saved to a seperate Frontend.md markdown file in the root of your project
 
-Below is a very simple example output for a stylesheets folder. The file descriptions (i.e. "# App Structure" etc) are pulled automatically from the first comment in each file (look in `test/source` for examples).
+Below is a very simple example output for a create-react-app project. The file descriptions (i.e. "# App Structure" etc) are pulled automatically from the first comment in each file (look in `test/source` for examples).
+
+### Public
 
 ````
-source/
+my-app/
 |
-|- stylesheets/
-|  |- app.scss _____________________ # App Structure
+|- public/
+|  |- favicon.ico ____________________________ # -
+|  |- index.html _____________________________ # -
+|  |- manifest.json __________________________ # -
+````
+
+### Src
+
+````
+my-app/
 |
-|  |- modules/
-|    |- _footer.scss _______________ # Footer
-|    |- _header.scss _______________ # Header
-|
-|  |- base/
-|    |- _base.scss _________________ # Base styles
-|    |- _mixins.scss _______________ # Sass Mixins
-|    |- _type.scss _________________ # Typography
-|    |- _variables.scss ____________ # Variables
+|- src/
+|  |- App.css ________________________________ # -
+|  |- App.js _________________________________ #
+|  |- App.test.js ____________________________ #
+|  |- index.css ______________________________ # -
+|  |- index.js _______________________________ #
+|  |- logo.svg _______________________________ # -
+|  |- registerServiceWorker.js _______________ # In production, we register a service worker to serve assets from local cache.
 ````
 
 ### Installation
@@ -52,8 +61,14 @@ In the root directory of your project name sure there is a `package.json` file w
 {
   "frontend": {
     "name": "YOUR PROJECT NAME",
-    "stylesheets": "RELATIVE/PATH/TO/STYLESHEETS/FOLDER",
-    "javascripts": "RELATIVE/PATH/TO/JAVASCRIPTS/FOLDER"
+    "sources": [
+      {
+        "title": "Public Files",
+        "path": "public"
+      },
+        "title": "Src Files",
+        "path": "src"
+    ]
   }
 }
 ````
@@ -68,7 +83,8 @@ All being well, you'll see something like this:
 
 ````
 ✔ Found package.json...
-✔ Found javascripts & stylesheets folders...
+✔ Found Public Files folder...
+✔ Found Src Files folder...
 ✔ FRONTEND.md successfully created :-)
 ````
 
@@ -85,12 +101,9 @@ Currently compatible with the following file extensions:
 - .scss
 - .js
 
-### Roadmap
+### Testing
 
-- Support for Coffeescript
-- Support for Javascript view templates (hamlc etc)
-- Add Bower overview
-
+Run `npm test` which will run `create-react-app my-app` under the tests/ directory and generate /tests/FRONTEND.md.
 ---
 
 Frontend Hound logo is courtesy of [Tom Judd](http://judd.land).

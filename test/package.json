@@ -1,7 +1,15 @@
 {
   "frontend": {
     "name": "Frontend Example",
-    "stylesheets": "source/stylesheets",
-    "javascripts": "source/javascripts"
+    "sources": [
+      {
+        "title": "Public Files",
+        "path": "my-app/public"
+      },
+      {
+        "title": "Src Files",
+        "path": "my-app/src"
+      }
+    ]
   }
 }

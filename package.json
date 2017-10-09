@@ -1,7 +1,8 @@
 {
   "name": "frontend-md-create-react-app",
   "version": "0.0.4",
-  "description": "Generate simple documention for your frontend code in seconds",
+  "description":
+    "Generate simple documention for your create-react-app frontend code in seconds",
   "main": "lib/frontend",
   "dependencies": {
     "walk": "",
@@ -12,29 +13,28 @@
   },
   "engine": "node >= 0.10.x",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-create-react-app": "cd test; npx create-react-app my-app; cd -",
+    "pretest": "npm install",
+    "test": "npm run build-create-react-app; cd test; ../app.js; cd -",
     "postinstall": "chmod u+x app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/animade/frontend-md.git"
+    "url": "git+ssh://git@github.com/willhlaw/frontend-md-create-react-app"
   },
   "preferGlobal": "true",
   "bin": {
     "frontend-md": "app.js"
   },
-  "author": "James Chambers",
+  "author": "Will Lawrence",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/animade/frontend-md/issues"
+    "url": "https://github.com/willhlaw/frontend-md-create-react-app/issues"
   },
-  "homepage": "https://github.com/animade/frontend-md",
+  "homepage": "https://github.com/willhlaw/frontend-md-create-react-app",
   "directories": {
+    "lib": "lib",
     "test": "test"
   },
-  "keywords": [
-    "styleguide",
-    "react",
-    "markdown"
-  ]
+  "keywords": ["styleguide", "react", "markdown"]
 }

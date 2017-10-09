@@ -2,37 +2,32 @@
 
 Frontend code structure for Frontend Example. 
 
-Generated 08 February 2015 using [Frontend.md](http://github.com/animade/frontend-md)
+Generated 09 October 2017 using [Frontend.md](https://github.com/willhlaw/frontend-md-create-react-app)
 
 ---
 
-### Stylesheets
+### Public Files
 
 ````
-source/
+my-app/
 |
-|- stylesheets/
-|  |- app.scss _______________________________ # App Structure
-|
-|  |- modules/
-|    |- _buttons.scss ________________________ # Buttons & User Input
-|    |- _footer.scss _________________________ # Footer styles
-|    |- _header.scss _________________________ # Header styles
-|    |- _menu.scss ___________________________ # Menu & Navigation
-|
-|  |- base/
-|    |- _base.sass ___________________________ # Base styles
-|    |- _layout.less _________________________ # Page Layout
-|    |- _mixins.scss _________________________ # Sass mixins
-|    |- _type.scss ___________________________ # Typography
-|    |- _variables.scss ______________________ # Sass variables
+|- public/
+|  |- favicon.ico ____________________________ # -
+|  |- index.html _____________________________ # -
+|  |- manifest.json __________________________ # -
 ````
 
-### Javascripts
+### Src Files
 
 ````
-source/
+my-app/
 |
-|- javascripts/
-|  |- app.js _________________________________ # Application init
+|- src/
+|  |- App.css ________________________________ # -
+|  |- App.js _________________________________ # 
+|  |- App.test.js ____________________________ # 
+|  |- index.css ______________________________ # -
+|  |- index.js _______________________________ # 
+|  |- logo.svg _______________________________ # -
+|  |- registerServiceWorker.js _______________ # In production, we register a service worker to serve assets from local cache.
 ````
