@@ -1,12 +1,13 @@
 <img alt="Frontend Hound" align="left" src="http://frontend-md.s3.amazonaws.com/frontend_Hound_00002.png" width="100px">
 
+This was forked from https://github.com/animade/frontend-md and extended to work with directory structure created from [create-react-app](https://github.com/facebookincubator/create-react-app).
+
 ### Generate simple documentation for your frontend code
 
 
 # Frontend.md
 
-Frontend.md looks at your frontend source code and generates a markdown file (called, predictably, FRONTEND.md) outlining the folder/file structure together with any topline comments. It's not a complete documentation system or styleguide generator. Rather it's designed to be a very simple tool which you can use on new or existing projects to get a high level view of how the code is laid out. 
-
+Frontend.md looks at your frontend source code and generates a markdown file (called, predictably, FRONTEND.md) outlining the folder/file structure together with any topline comments. It's not a complete documentation system or styleguide generator. Rather it's designed to be a very simple tool which you can use on new or existing projects to get a high level view of how the code is laid out.
 
 ### Features
 
@@ -39,15 +40,15 @@ source/
 
 Frontend.md is available via npm, so you'll need node installed. Once that's done, install with:  
 
-```` 
-npm install frontend-md -g
+````
+npm install frontend-md-create-react-app -g
 ````
 
 ### Usage
 
 In the root directory of your project name sure there is a `package.json` file with the following attributes:
 
-```` 
+````
 {
   "frontend": {
     "name": "YOUR PROJECT NAME",
@@ -81,7 +82,7 @@ Currently compatible with the following file extensions:
 
 - .sass
 - .less
-- .scss 
+- .scss
 - .js
 
 ### Roadmap

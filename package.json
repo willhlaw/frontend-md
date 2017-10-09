@@ -1,8 +1,8 @@
 {
-  "name": "frontend-md",
+  "name": "frontend-md-create-react-app",
   "version": "0.0.4",
   "description": "Generate simple documention for your frontend code in seconds",
-  "main": "index.js",
+  "main": "lib/frontend",
   "dependencies": {
     "walk": "",
     "moment": "",
@@ -17,15 +17,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/animade/frontend-md.git"
+    "url": "git+ssh://git@github.com/animade/frontend-md.git"
   },
-  "main": "lib/frontend",
   "preferGlobal": "true",
-  "bin": "app.js",
+  "bin": {
+    "frontend-md": "app.js"
+  },
   "author": "James Chambers",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/animade/frontend-md/issues"
   },
-  "homepage": "https://github.com/animade/frontend-md"
+  "homepage": "https://github.com/animade/frontend-md",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "styleguide",
+    "react",
+    "markdown"
+  ]
 }
