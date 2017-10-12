@@ -68,7 +68,11 @@ In the root directory of your project name sure there is a `package.json` file w
       },
         "title": "Src Files",
         "path": "src"
-    ]
+    ],
+    "options": {
+      "generateDate": false
+    }
+
   }
 }
 ````
@@ -104,6 +108,7 @@ Currently compatible with the following file extensions:
 ### Testing
 
 Run `npm test` which will run `create-react-app my-app` under the tests/ directory and generate /tests/FRONTEND.md.
+
 ---
 
 Frontend Hound logo is courtesy of [Tom Judd](http://judd.land).

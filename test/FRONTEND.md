@@ -2,7 +2,7 @@
 
 Frontend code structure for Frontend Example. 
 
-Generated 09 October 2017 using [Frontend.md](https://github.com/willhlaw/frontend-md-create-react-app)
+Generated using [Frontend.md](https://github.com/willhlaw/frontend-md-create-react-app)
 
 ---
 
