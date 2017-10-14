@@ -67,7 +67,8 @@ In the root directory of your project name sure there is a `package.json` file w
         "path": "public"
       },
         "title": "Src Files",
-        "path": "src"
+        "path": "src",
+        "excludeFolders": ["src/bootstrap"]
     ],
     "options": {
       "generateDate": false
