@@ -1,8 +1,7 @@
 {
   "name": "frontend-md-create-react-app",
-  "version": "1.2.0",
-  "description":
-    "Generate simple documention for your create-react-app frontend code in seconds",
+  "version": "1.2.1",
+  "description": "Generate simple documention for your create-react-app frontend code in seconds",
   "main": "lib/frontend",
   "dependencies": {
     "walk": "^2.3.9",
@@ -36,5 +35,9 @@
     "lib": "lib",
     "test": "test"
   },
-  "keywords": ["styleguide", "react", "markdown"]
+  "keywords": [
+    "styleguide",
+    "react",
+    "markdown"
+  ]
 }
