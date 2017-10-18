@@ -1,14 +1,15 @@
 {
   "name": "frontend-md-create-react-app",
   "version": "1.2.0",
-  "description": "Generate simple documention for your create-react-app frontend code in seconds",
+  "description":
+    "Generate simple documention for your create-react-app frontend code in seconds",
   "main": "lib/frontend",
   "dependencies": {
-    "walk": "",
-    "moment": "",
-    "underscore": "",
-    "nconf": "",
-    "cli-color": ""
+    "walk": "^2.3.9",
+    "moment": "^2.19.1",
+    "underscore": "^1.8.3",
+    "nconf": "^0.8.5",
+    "cli-color": "^1.2.0"
   },
   "engine": "node >= 0.10.x",
   "scripts": {
@@ -35,9 +36,5 @@
     "lib": "lib",
     "test": "test"
   },
-  "keywords": [
-    "styleguide",
-    "react",
-    "markdown"
-  ]
+  "keywords": ["styleguide", "react", "markdown"]
 }
