@@ -10,6 +10,10 @@
         "title": "Src Files",
         "path": "my-app/src",
         "excludeFolders": ["bootstrap/assets", "src/bootstrap", "tmp"]
+      },
+      {
+        "title": "A test set of source files",
+        "path": "source"
       }
     ],
     "options": {
