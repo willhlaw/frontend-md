@@ -56,4 +56,5 @@ source/
 |
 |- javascripts/
 |  |- app.js _________________________________ # Application init
+|  |- babel-this.es __________________________ # File written in ES that should be transpiled by babel to js
 ````
